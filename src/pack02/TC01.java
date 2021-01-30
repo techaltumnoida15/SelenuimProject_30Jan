@@ -8,7 +8,7 @@ public class TC01 {
 	public void testCase01() {
 		System.out.println("Hello");
 		
-		System.out.println("Hi")
+		System.out.println("Hi");
 	}
 
 }
