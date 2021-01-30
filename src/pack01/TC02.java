@@ -20,7 +20,8 @@ public class TC02 {
 		driver.manage().window().maximize();
 		
 		//Enter URL
-		driver.get("http://www.naukri.com");
+		//driver.get("http://www.naukri.com");
+		driver.navigate().to("http://www.naukri.com");
 	}
 	
 	@Test
