@@ -2,80 +2,70 @@ package pack01;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TC02 {
 	
-	WebDriver driver;	
+	WebDriver driver;
 	@BeforeTest
 	public void openBrowser() {
-		//Open Browser
+		//Open browser
 		System.setProperty("webdriver.chrome.driver", "H:\\Regression\\Selenium\\Drivers\\ChromeDriver_88\\chromedriver.exe");
-		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
 		//Enter URL
-		//driver.get("http://www.naukri.com");
-		driver.navigate().to("http://www.naukri.com");
+		driver.get("http://www.naukri.com");
 	}
 	
 	@Test
-	public void testCase01() {
-		//TC Logic
-		//Verify that user is on correct page
+	public void testCase01() throws Exception {
+		System.out.println("Running Test");
 		
-		String pageTitle = driver.getTitle();
-		System.out.println("Page Title  = " + pageTitle);
+		//Click on Login
+		driver.findElement(By.id("login_Layer")).click();
+		System.out.println("Click on Login");
 		
-		if(pageTitle.contains("Naukri.com")) {
-			System.out.println("User is on correct page.");
+		//Wait
+		Thread.sleep(3000);
+		
+		//Enter email ID
+		driver.findElement(By.xpath("//input[@placeholder='Enter your active Email ID / Username']")).sendKeys("it.tyagi@gmail.com");
+		System.out.println("User id is entered.");
+		
+		//Enter Passwd
+		driver.findElement(By.cssSelector("input[placeholder='Enter your password']")).sendKeys("abc@123");
+		System.out.println("Enter Passwd");
+		
+		//Click on Login
+		driver.findElement(By.cssSelector("button[class='btn-primary loginButton']")).click();
+		System.out.println("Click on Login");
+		
+		Thread.sleep(3000);
+		
+		//Verify that login is successful or not
+		String errMessage = driver.findElement(By.cssSelector("div[class='server-err']")).getText();
+		System.out.println("errMessage = " + errMessage);
+		
+		if(errMessage.contains("Invalid details")) {
+			System.out.println("Login is failed");
 		}
 		else {
-			System.out.println("Udser is on another page - Test FAIL");
+			System.out.println("Login is successful");
 		}
-		
-		//Verify Best Place to work
-		WebElement bestPlaceToWork = driver.findElement(By.id("BestPlaces"));
-		String textBestPlace = bestPlaceToWork.getText();
-		System.out.println("textBestPlace = " + textBestPlace);
-		
-		if(textBestPlace.contains("Best Places to Work")) {
-			System.out.println("Best Place to work is present.");
-		}
-		else {
-			System.out.println("Best Place to work is not present. - Test Fail");
-		}
-		
-		//Verify that All sectors should be selected
-		WebElement allSectors = driver.findElement(By.cssSelector("#BestPlaces > ul > li"));
-		String attValue = allSectors.getAttribute("class");
-		
-		System.out.println("attValue = " + attValue);
-		
-		if(attValue.contains("selected")) {
-			System.out.println("All Sectors is selected.");
-		}
-		else {
-			System.out.println("All Sectors is not selected. - Test Fail");
-		}
-		
+			
 	}
 	
 	@AfterTest
-	public void closeBrowser() {
-		driver.quit();  //will close all instance of browser
-		//driver.close();   //will close the current instance (focused browser window)
+	public void quitBrowser() {
+		driver.quit();
 	}
 }
 
 
-//Use ctrl + shift + l  => to get all shortcuts of eclipse
-
-// ctrl + shift + o => to import all at once
 	
 	
