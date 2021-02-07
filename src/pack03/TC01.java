@@ -5,4 +5,7 @@ import org.testng.annotations.BeforeTest;
 public class TC01 {
 
 	@BeforeTest
+	public void openBrowser() {
+		
+	}
 }
