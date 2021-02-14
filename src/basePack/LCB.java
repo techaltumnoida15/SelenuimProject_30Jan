@@ -14,7 +14,6 @@ public class LCB {
 	public void openBrowser() {
 		String browser = "firefox";
 		
-		
 		/*
 		 * String userName = System.getProperty("user.name");
 		 * System.out.println("userName - " + userName);
