@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22478" started-at="2021-01-31T12:47:47 IST" finished-at="2021-01-31T12:48:09 IST">
+  <suite name="Default suite" duration-ms="25291" started-at="2021-02-14T12:08:45 IST" finished-at="2021-02-14T12:09:10 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22478" started-at="2021-01-31T12:47:47 IST" finished-at="2021-01-31T12:48:09 IST">
-      <class name="pack02.TC01">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:pack02.TC01@706a04ae]" name="openBrowser" is-config="true" duration-ms="8047" started-at="2021-01-31T12:47:47 IST" finished-at="2021-01-31T12:47:55 IST">
+    <test name="Default test" duration-ms="25291" started-at="2021-02-14T12:08:45 IST" finished-at="2021-02-14T12:09:10 IST">
+      <class name="pack01.TC02">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:pack01.TC02@6eceb130]" name="openBrowser" is-config="true" duration-ms="7883" started-at="2021-02-14T12:08:45 IST" finished-at="2021-02-14T12:08:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="testCase01()[pri:0, instance:pack02.TC01@706a04ae]" name="testCase01" duration-ms="13704" started-at="2021-01-31T12:47:55 IST" finished-at="2021-01-31T12:48:09 IST">
+        <test-method status="PASS" signature="testCase01()[pri:0, instance:pack01.TC02@6eceb130]" name="testCase01" duration-ms="15839" started-at="2021-02-14T12:08:53 IST" finished-at="2021-02-14T12:09:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase01 -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:pack02.TC01@706a04ae]" name="quitBrowser" is-config="true" duration-ms="696" started-at="2021-01-31T12:48:09 IST" finished-at="2021-01-31T12:48:09 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:pack01.TC02@6eceb130]" name="closeBrowser" is-config="true" duration-ms="1544" started-at="2021-02-14T12:09:08 IST" finished-at="2021-02-14T12:09:10 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- pack02.TC01 -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- pack01.TC02 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -8,23 +8,15 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TC01 {
-	
-	WebDriver driver;	
-	@BeforeTest
-	public void openBrowser() {
-		//Open Browser
-		System.setProperty("webdriver.chrome.driver", "H:\\Regression\\Selenium\\Drivers\\ChromeDriver_88\\chromedriver.exe");
-		
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		
-		//Enter URL
-		driver.get("http://www.naukri.com");
-	}
+import basePack.LCB;
+
+public class TC01 extends LCB{
 	
 	@Test
 	public void testCase01() {
+		
+		//Enter URL
+		driver.get("http://www.naukri.com");
 		//TC Logic
 		//Verify that user is on correct page
 		
@@ -65,11 +57,6 @@ public class TC01 {
 		
 	}
 	
-	@AfterTest
-	public void closeBrowser() {
-		driver.quit();  //will close all instance of browser
-		//driver.close();   //will close the current instance (focused browser window)
-	}
 }
 
 

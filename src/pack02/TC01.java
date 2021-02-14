@@ -1,30 +1,19 @@
 package pack02;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TC01 {
-	
-	WebDriver driver;
-	@BeforeTest
-	public void openBrowser() {
-		//Open browser
-		System.setProperty("webdriver.chrome.driver", "H:\\Regression\\Selenium\\Drivers\\ChromeDriver_88\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		
-		//Enter URL
-		driver.get("http://www.naukri.com");
-	}
-	
+import basePack.LCB;
+
+public class TC01 extends LCB{
 	@Test
 	public void testCase01() throws Exception {
 		System.out.println("Running Test");
+		
+		//Enter URL
+		driver.get("http://www.naukri.com");
 		
 		//Click on Login
 		driver.findElement(By.id("login_Layer")).click();
@@ -85,11 +74,4 @@ public class TC01 {
 			System.out.println("I agree checkbox is not selected already");
 		}
 	}
-	
-	
-	@AfterTest
-	public void quitBrowser() {
-		driver.quit();
-	}
-
 }

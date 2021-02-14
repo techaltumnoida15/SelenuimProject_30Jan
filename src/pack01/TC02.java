@@ -8,23 +8,16 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TC02 {
-	
-	WebDriver driver;
-	@BeforeTest
-	public void openBrowser() {
-		//Open browser
-		System.setProperty("webdriver.chrome.driver", "H:\\Regression\\Selenium\\Drivers\\ChromeDriver_88\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		
-		//Enter URL
-		driver.get("http://www.naukri.com");
-	}
+import basePack.LCB;
+
+public class TC02 extends LCB{
 	
 	@Test
 	public void testCase01() throws Exception {
 		System.out.println("Running Test");
+		
+		//Enter URL
+		driver.get("http://www.naukri.com");
 		
 		//Click on Login
 		driver.findElement(By.id("login_Layer")).click();
@@ -58,11 +51,6 @@ public class TC02 {
 			System.out.println("Login is successful");
 		}
 			
-	}
-	
-	@AfterTest
-	public void quitBrowser() {
-		driver.quit();
 	}
 }
 

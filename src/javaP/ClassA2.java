@@ -77,8 +77,6 @@ public class ClassA2 {
 	}
 	
 	
-	
-	
 	public static void main(String[] args) {
 		ClassA2 obj = new ClassA2();
 		obj.revString();

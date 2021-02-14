@@ -6,7 +6,7 @@
       <class name="pack02.TC01">
         <methods>
           <include name="testCase01"/>
-          <include name="quitBrowser"/>
+          <include name="closeBrowser"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- pack02.TC01 -->
