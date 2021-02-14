@@ -1,0 +1,32 @@
+Xpath:
+
+1.
+//HTML-TAG[@att='value']
+
+//input[@id='abc']
+
+//*[@id='abc']
+
+---------------------
+When there are multiple elements 
+
+(//div[@class='mTxt'])[4]
+
+--------------------
+
+Use TEXT in xpath
+
+//HTML-TAG[text() = 'value']
+
+//div[text()='More']
+
+---------------------
+
+startwith / endswith / contains
+
+
+//div[contains(@class, 'register-btn')]
+
+//div[starts-with(@class, 'wdgt-')]
+
+##=>    //div[ends-with(@class, 'register-btn')]
