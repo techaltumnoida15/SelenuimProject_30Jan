@@ -1,0 +1,53 @@
+//HTML-TAG[@att='val']
+
+//a[@title = 'Hotels']
+==========================================
+
+CSS Selector:
+
+1.
+HTML-TAG[att='val']
+
+#####################################
+2. If ID is given in HTML code
+
+HTML-TAG#ID
+
+a#booking_engine_hotels
+
+3.
+If CLASS is given in HTML code
+
+HTML-TAG.CLASS
+
+span.demo-icon icon-hotels
+
+NOTE: IF THERE IS SPACE IN id OR IN class => REPLACE SPACE WITH "."
+
+#####################################
+
+starts with
+
+id, class or any attribute
+
+id = abc123
+
+a[id='booking_engine_hotels']
+
+a[id^='booking_engine']
+
+-------------------------
+
+ends with
+
+a[id='booking_engine_hotels']
+
+a[id$='engine_hotels']
+
+----------------------------
+
+matching pattern
+
+a[id='booking_engine_hotels']
+
+a[id*='_engine_']
