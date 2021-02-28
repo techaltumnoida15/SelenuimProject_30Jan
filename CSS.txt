@@ -51,3 +51,19 @@ matching pattern
 a[id='booking_engine_hotels']
 
 a[id*='_engine_']
+
+=====================================
+
+Navigate to next child element   => use " " or ">"
+
+div[id='nav-flyout-ya-signin']
+
+a[data-nav-role='signin']
+
+=================================
+
+input[id='BE_flight_origin_city']
+
+
+
+

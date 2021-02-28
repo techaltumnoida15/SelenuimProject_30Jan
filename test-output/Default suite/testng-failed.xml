@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pack02.MouseOver">
+      <class name="pack03.SnapdealLogin">
         <methods>
+          <include name="loginSnapDeal"/>
           <include name="closeBrowser"/>
           <include name="openBrowser"/>
-          <include name="mouseOverTest"/>
         </methods>
-      </class> <!-- pack02.MouseOver -->
+      </class> <!-- pack03.SnapdealLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
