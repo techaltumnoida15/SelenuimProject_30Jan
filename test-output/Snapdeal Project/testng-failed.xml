@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Snapdeal Project]" parallel="tests">
-  <test thread-count="5" name="Snapdeal Login(failed)" parallel="tests">
+  <test thread-count="5" name="COA Search(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="pack03.SnapdealLogin">
-        <methods>
-          <include name="loginSnapDeal"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- pack03.SnapdealLogin -->
-    </classes>
-  </test> <!-- Snapdeal Login(failed) -->
-  <test thread-count="5" name="Yatra.com Test(failed)" parallel="tests">
-    <parameter name="browser" value="ie"/>
-    <classes>
-      <class name="pack02.HandleSuggestionList">
+      <class name="march_13.TC01">
         <methods>
           <include name="closeBrowser"/>
+          <include name="initiateSearch"/>
           <include name="openBrowser"/>
-          <include name="handleSuggestionList"/>
         </methods>
-      </class> <!-- pack02.HandleSuggestionList -->
+      </class> <!-- march_13.TC01 -->
     </classes>
-  </test> <!-- Yatra.com Test(failed) -->
+  </test> <!-- COA Search(failed) -->
 </suite> <!-- Failed suite [Snapdeal Project] -->

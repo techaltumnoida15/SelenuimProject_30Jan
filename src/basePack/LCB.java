@@ -56,7 +56,7 @@ public class LCB {
 
 	@AfterTest
 	public void closeBrowser() {
-		driver.quit(); // will close all instance of browser
+		//driver.quit(); // will close all instance of browser
 		// driver.close(); //will close the current instance (focused browser window)
 	}
 }

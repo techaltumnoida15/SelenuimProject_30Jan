@@ -4,14 +4,14 @@
 <!-- <parameter name="browser"  value="chrome"/> -->
     
 
-  <test name="Snapdeal Login" >
+  <test name="COA Search" >
       <parameter name="browser"  value="chrome"/>
     <classes>
-       <class name="pack03.SnapdealLogin" />
+       <class name="march_13.TC01" />
     </classes>
   </test>
   
-  
+  <!-- 
    <test name="Snapdeal Search Iteam" >
        <parameter name="browser"  value="firefox"/>
     <classes>
@@ -24,7 +24,7 @@
     <classes>
        <class name="pack02.HandleSuggestionList" />
     </classes>
-  </test>
+  </test> -->
  
  
 </suite>
