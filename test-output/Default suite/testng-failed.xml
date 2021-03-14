@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="march_13.TC01">
+      <class name="org.spandeal.com.SnapdelLogin">
         <methods>
           <include name="closeBrowser"/>
-          <include name="initiateSearch"/>
           <include name="openBrowser"/>
+          <include name="snapdealLogin"/>
         </methods>
-      </class> <!-- march_13.TC01 -->
+      </class> <!-- org.spandeal.com.SnapdelLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

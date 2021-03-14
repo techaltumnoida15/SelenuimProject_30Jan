@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Snapdeal Project" duration-ms="20383" started-at="2021-03-13T12:48:05 IST" finished-at="2021-03-13T12:48:25 IST">
+  <suite name="Snapdeal Project" duration-ms="11475" started-at="2021-03-14T11:59:57 IST" finished-at="2021-03-14T12:00:09 IST">
     <groups>
     </groups>
-    <test name="COA Search" duration-ms="20383" started-at="2021-03-13T12:48:05 IST" finished-at="2021-03-13T12:48:25 IST">
-      <class name="march_13.TC01">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:march_13.TC01@5c072e3f]" name="openBrowser" is-config="true" duration-ms="2313" started-at="2021-03-13T12:48:05 IST" finished-at="2021-03-13T12:48:07 IST">
+    <test name="COA Search" duration-ms="11475" started-at="2021-03-14T11:59:57 IST" finished-at="2021-03-14T12:00:09 IST">
+      <class name="org.spandeal.com.SnapdelLogin">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:org.spandeal.com.SnapdelLogin@5c072e3f]" name="openBrowser" is-config="true" duration-ms="5444" started-at="2021-03-14T11:59:57 IST" finished-at="2021-03-14T12:00:03 IST">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="initiateSearch()[pri:0, instance:march_13.TC01@5c072e3f]" name="initiateSearch" duration-ms="18033" started-at="2021-03-13T12:48:07 IST" finished-at="2021-03-13T12:48:25 IST">
+        <test-method status="PASS" signature="snapdealLogin()[pri:0, instance:org.spandeal.com.SnapdelLogin@5c072e3f]" name="snapdealLogin" duration-ms="5983" started-at="2021-03-14T12:00:03 IST" finished-at="2021-03-14T12:00:09 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initiateSearch -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:march_13.TC01@5c072e3f]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2021-03-13T12:48:25 IST" finished-at="2021-03-13T12:48:25 IST">
+        </test-method> <!-- snapdealLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:org.spandeal.com.SnapdelLogin@5c072e3f]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2021-03-14T12:00:09 IST" finished-at="2021-03-14T12:00:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- march_13.TC01 -->
+      </class> <!-- org.spandeal.com.SnapdelLogin -->
     </test> <!-- COA Search -->
   </suite> <!-- Snapdeal Project -->
 </testng-results>
